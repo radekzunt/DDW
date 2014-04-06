@@ -1,0 +1,30 @@
+Phase: TelephoneNumbers
+Input: Token
+Options: control = brill
+ 
+Rule: TelephoneNumber
+(
+
+
+(
+
+({Token.string =~ "420"}) |
+
+({Token.string == "-"}
+(({Token.kind == number,Token.length == 3 })
+{Token.string == "-"}
+({Token.kind == number,Token.length == 3})
+{Token.string == "-"}
+({Token.kind == number,Token.length == 3}))) 
+
+| ({Token.kind == number,Token.length == 9 })
+
+| ({Token.kind == number,Token.length == 12})
+
+)
+
+):reference
+-->
+ :reference.Number = { kind= "telNumber" }
+
+
