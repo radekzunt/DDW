@@ -25,3 +25,4 @@ Used technologies
 Example
 --
 
+<img src="http://i.imgur.com/nEVMxHa.png" alt="Output in NetBeans" />
