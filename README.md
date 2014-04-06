@@ -17,7 +17,7 @@ Used technologies
 --
 
 <ul>
-<li>Java</li>
+<li>Java SE</li>
 <li>GATE Embedded</li>
 <li>JAPE grammar</li>
 </ul>
